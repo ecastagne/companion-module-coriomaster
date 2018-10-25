@@ -68,7 +68,7 @@ instance.prototype.init_tcp = function() {
 	}
 
 	if (self.config.host) {
-		self.socket = new tcp(self.config.host, 30000);
+		self.socket = new tcp(self.config.host, 10001);
 
 		self.socket.on('status_change', function (status, message) {
 			self.status(status, message);
@@ -120,12 +120,12 @@ instance.prototype.config_fields = function () {
 			id: 'info',
 			width: 12,
 			label: 'Information',
-			value: 'Remember to activate Telnet Remote in Setup -> Console -> Global Settings -> Telnet'
+			value: 'Port 10001 is hardcoded into this module for Corio Control.'
 		},
 		{
 			type: 'textinput',
 			id: 'host',
-			label: 'grandMA2 Console IP',
+			label: 'Corio Master IP',
 			width: 12,
 			default: '192.168.0.1',
 			regex: self.REGEX_IP
@@ -135,14 +135,14 @@ instance.prototype.config_fields = function () {
 			id: 'user',
 			label: 'Username',
 			width: 6,
-			default: 'Administrator',
+			default: 'admin',
 		},
 		{
 			type: 'textinput',
 			id: 'pass',
 			label: 'Password',
 			width: 6,
-			default: 'admin'
+			default: 'adminpw'
 		}
 	]
 };
