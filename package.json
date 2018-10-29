@@ -1,13 +1,13 @@
 {
-  "name": "grandma2",
+  "name": "corio",
   "version": "1.0.0",
 	"api_version": "1.0.0",
-	"keywords": [ "Lighting" ],
-	"manufacturer": "grandMA",
+	"keywords": [ "Video" ],
+	"manufacturer": "tvONE",
 	"product": "2",
-	"shortname": "grandma",
+	"shortname": "corio",
   "description": "",
-  "main": "grandma2.js",
+  "main": "corio.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
